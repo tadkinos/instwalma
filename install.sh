@@ -20,7 +20,7 @@ yum install -y mongodb-org
 service mongod start
 chkconfig mongod on
 
-echo "cd /root/walma" >> /etc/rc.local
+echo "cd /root/instwalma/walma" >> /etc/rc.local
 echo "npm start" >> /etc/rc.local
 
 git clone git://github.com/opinsys/walma.git
