@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yum install gcc gcc-c++
+yum -y install gcc gcc-c++
 yum -y install openssl
 yum -y install zlib-devel
 yum -y install python
@@ -9,7 +9,7 @@ git clone https://github.com/creationix/nvm.git ~/.nvm
 source ~/.nvm/nvm.sh
 nvm install 0.6.21 --without-ssl
 yum -y install epel-release
-yum install nodejs npm --enablerepo=epel
+yum -y install nodejs npm --enablerepo=epel
 
 echo "[mongodb]" >> /etc/yum.repos.d/mongodb.repo
 echo "name=MongoDB Repository" >> /etc/yum.repos.d/mongodb.repo
